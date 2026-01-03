@@ -1,0 +1,8 @@
+.github
+
+src/BookLibrary.Api/bin
+
+src/BookLibrary.Api/obj
+src/BookLibrary.Domain/obj
+tests/BookLibrary.Domain.Tests/bin
+tests/BookLibrary.Domain.Tests/obj

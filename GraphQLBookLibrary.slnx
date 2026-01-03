@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/BookLibrary.Domain/BookLibrary.Domain.csproj" />
+    <Project Path="src/BookLibrary.Api/BookLibrary.Api.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/BookLibrary.Domain.Tests/BookLibrary.Domain.Tests.csproj" />
+    </Folder>
+</Solution>
