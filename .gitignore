@@ -6,3 +6,5 @@ src/BookLibrary.Api/obj
 src/BookLibrary.Domain/obj
 tests/BookLibrary.Domain.Tests/bin
 tests/BookLibrary.Domain.Tests/obj
+.vs
+/src/BookLibrary.Domain/bin/Debug/net10.0
