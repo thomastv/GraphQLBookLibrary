@@ -40,7 +40,7 @@ BookLibrary.Api/
 dotnet run
 ```
 
-Navigate to `https://localhost:5001/graphql` to access the Banana Cake Pop GraphQL IDE.
+Navigate to `https://localhost:5001/graphql` to access the GraphQL IDE.
 
 ## 📊 GraphQL Schema
 
