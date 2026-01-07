@@ -40,11 +40,6 @@ A comprehensive GraphQL API for managing a book library, built with .NET 10 and 
 └─────────────────────────────────────────────────────────────────┘
 ```
 
-## 📋 Prerequisites
-
-- [.NET 10 SDK](https://dotnet.microsoft.com/download/dotnet/10.0)
-- IDE: Visual Studio 2022, VS Code with C# Dev Kit, or JetBrains Rider
-
 ## 🚀 Getting Started
 
 ### 1. Clone and Navigate
