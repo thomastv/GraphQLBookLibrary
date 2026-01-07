@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add Entity Framework Core with SQLite
-builder.Services.AddDbContext<AppDbContext>(options =>
+builder.Services.AddPooledDbContextFactory<AppDbContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 // Add GraphQL Server with Hot Chocolate
@@ -24,7 +24,8 @@ var app = builder.Build();
 // Initialize database and seed data
 using (var scope = app.Services.CreateScope())
 {
-    var context = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+    var factory = scope.ServiceProvider.GetRequiredService<IDbContextFactory<AppDbContext>>();
+    await using var context = await factory.CreateDbContextAsync();
     await context.Database.EnsureCreatedAsync();
     await SeedData.InitializeAsync(context);
 }
